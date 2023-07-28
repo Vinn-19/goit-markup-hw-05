@@ -98,6 +98,9 @@ body {
   margin-left: 76px;
 }
 
+.header-list-item {
+}
+
 .header-logo {
   color: var(--navyblue-color);
   font-family: "Raleway", sans-serif;
@@ -123,9 +126,19 @@ body {
 }
 
 .header-link:hover,
-.header-link:focus,
-.priority {
+.header-link:focus {
   color: var(--iris-color);
+}
+
+.priority:hover,
+.priority:focus {
+  width: 66px;
+  height: 4px;
+  text-decoration: underline;
+  color: var(--ocean-color);
+  text-underline-offset: 20px;
+  border-radius: 2px;
+  margin-top: 10px;
 }
 
 .header-contacts {
