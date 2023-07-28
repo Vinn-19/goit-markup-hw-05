@@ -29,7 +29,7 @@
           </a>
           <ul class="header-list list">
             <li class="header-list-item">
-              <a class="header-link link priority" href="./index.html"
+              <a class="header-link link current" href="./index.html"
                 >Studio</a
               >
             </li>
@@ -67,7 +67,7 @@
             for Your Business
           </h1>
 
-          <button class="hero-button button" type="button">
+          <button class="hero-button button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -466,4 +466,20 @@
       </div>
     </div>
 </footer>
+
+<!-- MODAL -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- MODAL SCRIPT -->
+    <script src="./js/modal.js"></script>
+
+</body>
 </html>
