@@ -149,14 +149,16 @@ body {
   height: 4px;
   bottom: -1px;
   left: 0;
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid transparent;
 }
 
 .header-link:hover:after {
   bottom: -1px;
   background-color: var(--ocean-color);
   border: 2px solid var(--ocean-color);
-  border-radius: 2px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts {
@@ -596,6 +598,10 @@ body {
   transform: translateY(0);
 }
 
+.services-link:focus .services-link-text {
+  transform: translateY(0);
+}
+
 .services-list {
   background-color: var(--white-color);
   display: flex;
@@ -674,7 +680,8 @@ body {
   cursor: pointer;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-icon {
