@@ -324,7 +324,7 @@ body {
 }
 
 .team-social-link-box {
-  fill: var(--cloud-color);
+  fill: currentColor;
   width: 16px;
   height: 16px;
 }
@@ -336,6 +336,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--cloud-color);
   background-color: var(--iris-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
